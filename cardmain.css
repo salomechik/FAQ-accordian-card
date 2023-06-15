@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    margin: auto;
+    padding: 148px 24px 48px 24px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.main{
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    padding: 0 24px 48px 24px;
+    background-repeat: no-repeat;
+}
+.pictures{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    display: none;
+}
+.imagedesktop, .desktopbg{
+    display: none;
+}
+.imagemobile{
+    width: 60%;
+    margin: auto;
+    margin-top: -28%;
+    position:absolute;
+}
+.mobilebg{
+    position: relative;
+    margin: auto;
+    margin-top: 0;
+    width:80%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.title{
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+.withicon{
+    display: flex;
+    flex-direction: row;
+    padding: 19px 0 19px 0;
+}
+.QA{
+    display: flex;
+    flex-direction: column;
+}
+.question{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4B4C5F;
+}
+.bold{
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1E1F36;
+}
+.answer{
+    display: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #787887;
+    margin-top: 10px;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.icon{
+    width: 14px;
+    height: 8px;
+    text-align: right;
+    margin-left: auto;
+}
+.line{
+    background-color: #E8E8EA;
+}
+.hidden{
+    display: block;
+}
+@media(min-width:1440px){
+body{
+    padding: 129px 239px 130px 281px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.imagemobile, .mobilebg{
+    display: none;
+}
+.imagedesktop{
+    display: block;
+    position: absolute;
+    top: 26%;
+    left:195px;
+}
+.desktopbg{
+    display: none;
+    position: relative;
+}
+.box{
+    display: block;
+    width: 190px;
+    height: 186px;
+    z-index: 2;
+    margin-top: 240px;
+    margin-left: -167%;
+}
+.container{
+    width: 50%;
+    text-align: right;
+    margin-left: auto;
+    padding: 65px 71px 43px 0;
+}
+.question{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    text-align: left;
+}
+.answer{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+.question:hover{
+    color:#F47B56;
+}
+.bold{
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1E1F36;
+}
+}
